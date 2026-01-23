@@ -11,7 +11,6 @@ library(FSA)
 library(DescTools)
 library(dgof)
 
-setwd("C:\\Users\\mtpla\\Downloads")
 student.old=read.csv("student_data.csv")
 student= student.old[, c("sex", "internet", "studytime", "health", "age", "absences","failures", "G1","G2","G3")]
 n= length(student[,1])
@@ -407,5 +406,6 @@ CramerV(study.internet)
 ContCoef(study.internet)
 
 # Donc, on a une relation tres faible entre avoir internet et etudier. Donc, on peut soucçonner qu'avoir d'internet n'est pas un facteur determinant pour etudier
+
 
 
