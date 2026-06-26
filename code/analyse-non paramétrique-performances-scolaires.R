@@ -11,7 +11,7 @@ library(FSA)
 library(DescTools)
 library(dgof)
 
-student.old=read.csv("student_data.csv")
+student.old=read.csv("data/student_data.csv")
 student= student.old[, c("sex", "internet", "studytime", "health", "age", "absences","failures", "G1","G2","G3")]
 n= length(student[,1])
 student$sex= as.factor(student$sex)
